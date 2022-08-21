@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia", "InformMedia\InformMedia.csproj", "{8C1261CC-4013-40F4-925B-C34E4B3D05A2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLayer", "BusinessLayer", "{6B177DFE-7985-4FCB-8B97-B0B1D15D06B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAccessLayer", "{AECB97B1-49B7-498F-BC17-DF977E7F48C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InfrastructureLayer", "InfrastructureLayer", "{6F496067-EAC3-4C9F-B0FB-65155D527CF7}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile2.txt = TextFile2.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{3EE3864B-2E52-4724-8524-CEC268A2B5CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainLayer", "DomainLayer", "{CAB01B8E-5625-459D-85F2-E66C19C02014}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Entities", "BusinessLayer\InformMedia.Entities\InformMedia.Entities.csproj", "{9FEA4A75-444D-4805-AE63-0C7C95743AE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Service.Contracts", "BusinessLayer\InformMedia.Service.Contracts\InformMedia.Service.Contracts.csproj", "{4BBF680C-C19B-42F6-A4F2-B965BB100056}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Service.Implementation", "BusinessLayer\InformMedia.Service.Implementation\InformMedia.Service.Implementation.csproj", "{FB9EA9F4-774C-42DA-9E1C-7BB965CCC9E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Repository.Contracts", "DataAccessLayer\InformMedia.Repository.Contracts\InformMedia.Repository.Contracts.csproj", "{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.Implementation", "DataAccessLayer\Repository.Implementation\Repository.Implementation.csproj", "{529FA614-8210-43E0-9729-E97AA72CC7CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +35,40 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8C1261CC-4013-40F4-925B-C34E4B3D05A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C1261CC-4013-40F4-925B-C34E4B3D05A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C1261CC-4013-40F4-925B-C34E4B3D05A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C1261CC-4013-40F4-925B-C34E4B3D05A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE3864B-2E52-4724-8524-CEC268A2B5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE3864B-2E52-4724-8524-CEC268A2B5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE3864B-2E52-4724-8524-CEC268A2B5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE3864B-2E52-4724-8524-CEC268A2B5CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FEA4A75-444D-4805-AE63-0C7C95743AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FEA4A75-444D-4805-AE63-0C7C95743AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FEA4A75-444D-4805-AE63-0C7C95743AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FEA4A75-444D-4805-AE63-0C7C95743AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BBF680C-C19B-42F6-A4F2-B965BB100056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BBF680C-C19B-42F6-A4F2-B965BB100056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BBF680C-C19B-42F6-A4F2-B965BB100056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BBF680C-C19B-42F6-A4F2-B965BB100056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB9EA9F4-774C-42DA-9E1C-7BB965CCC9E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB9EA9F4-774C-42DA-9E1C-7BB965CCC9E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB9EA9F4-774C-42DA-9E1C-7BB965CCC9E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB9EA9F4-774C-42DA-9E1C-7BB965CCC9E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{529FA614-8210-43E0-9729-E97AA72CC7CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529FA614-8210-43E0-9729-E97AA72CC7CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529FA614-8210-43E0-9729-E97AA72CC7CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529FA614-8210-43E0-9729-E97AA72CC7CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9FEA4A75-444D-4805-AE63-0C7C95743AE7} = {6B177DFE-7985-4FCB-8B97-B0B1D15D06B3}
+		{4BBF680C-C19B-42F6-A4F2-B965BB100056} = {6B177DFE-7985-4FCB-8B97-B0B1D15D06B3}
+		{FB9EA9F4-774C-42DA-9E1C-7BB965CCC9E7} = {6B177DFE-7985-4FCB-8B97-B0B1D15D06B3}
+		{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52} = {AECB97B1-49B7-498F-BC17-DF977E7F48C4}
+		{529FA614-8210-43E0-9729-E97AA72CC7CB} = {AECB97B1-49B7-498F-BC17-DF977E7F48C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AB4F60C-A711-449A-BBED-62057EC784AA}

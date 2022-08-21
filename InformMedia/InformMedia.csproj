@@ -11,9 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="InformMedia.BusinessLayer\Entities\" />
-    <Folder Include="InformMedia.BusinessLayer\Service.Implementation\" />
-    <Folder Include="InformMedia.BusinessLayer\Service.Contracts\" />
+    <Folder Include="InformMedia.BusinessLayer2\Service.Implementation\" />
+    <Folder Include="InformMedia.BusinessLayer2\Service.Contracts\" />
     <Folder Include="InformMedia.DataAccessLayer\Repository.Implementation\" />
     <Folder Include="InformMedia.DataAccessLayer\Repository.Contracts\" />
     <Folder Include="InformMedia.InfrastructureLayer\" />
