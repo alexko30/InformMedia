@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Service.Impleme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Repository.Contracts", "DataAccessLayer\InformMedia.Repository.Contracts\InformMedia.Repository.Contracts.csproj", "{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.Implementation", "DataAccessLayer\Repository.Implementation\Repository.Implementation.csproj", "{529FA614-8210-43E0-9729-E97AA72CC7CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Repository.Implementation", "DataAccessLayer\Repository.Implementation\InformMedia.Repository.Implementation.csproj", "{529FA614-8210-43E0-9729-E97AA72CC7CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
