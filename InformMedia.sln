@@ -12,22 +12,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InfrastructureLayer", "Infr
 		TextFile2.txt = TextFile2.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{3EE3864B-2E52-4724-8524-CEC268A2B5CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{3EE3864B-2E52-4724-8524-CEC268A2B5CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainLayer", "DomainLayer", "{CAB01B8E-5625-459D-85F2-E66C19C02014}"
 	ProjectSection(SolutionItems) = preProject
 		TextFile1.txt = TextFile1.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Entities", "BusinessLayer\InformMedia.Entities\InformMedia.Entities.csproj", "{9FEA4A75-444D-4805-AE63-0C7C95743AE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformMedia.Entities", "BusinessLayer\InformMedia.Entities\InformMedia.Entities.csproj", "{9FEA4A75-444D-4805-AE63-0C7C95743AE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Service.Contracts", "BusinessLayer\InformMedia.Service.Contracts\InformMedia.Service.Contracts.csproj", "{4BBF680C-C19B-42F6-A4F2-B965BB100056}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformMedia.Service.Contracts", "BusinessLayer\InformMedia.Service.Contracts\InformMedia.Service.Contracts.csproj", "{4BBF680C-C19B-42F6-A4F2-B965BB100056}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Service.Implementation", "BusinessLayer\InformMedia.Service.Implementation\InformMedia.Service.Implementation.csproj", "{FB9EA9F4-774C-42DA-9E1C-7BB965CCC9E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformMedia.Service.Implementation", "BusinessLayer\InformMedia.Service.Implementation\InformMedia.Service.Implementation.csproj", "{FB9EA9F4-774C-42DA-9E1C-7BB965CCC9E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Repository.Contracts", "DataAccessLayer\InformMedia.Repository.Contracts\InformMedia.Repository.Contracts.csproj", "{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformMedia.Repository.Contracts", "DataAccessLayer\InformMedia.Repository.Contracts\InformMedia.Repository.Contracts.csproj", "{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Repository.Implementation", "DataAccessLayer\Repository.Implementation\InformMedia.Repository.Implementation.csproj", "{529FA614-8210-43E0-9729-E97AA72CC7CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.Repository.Implementation", "DataAccessLayer\InformMedia.Repository.Implementation\InformMedia.Repository.Implementation.csproj", "{A6F49412-921E-4890-8101-FC1F7F5702D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +55,10 @@ Global
 		{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52}.Release|Any CPU.Build.0 = Release|Any CPU
-		{529FA614-8210-43E0-9729-E97AA72CC7CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{529FA614-8210-43E0-9729-E97AA72CC7CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{529FA614-8210-43E0-9729-E97AA72CC7CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{529FA614-8210-43E0-9729-E97AA72CC7CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F49412-921E-4890-8101-FC1F7F5702D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F49412-921E-4890-8101-FC1F7F5702D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F49412-921E-4890-8101-FC1F7F5702D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F49412-921E-4890-8101-FC1F7F5702D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,7 +68,7 @@ Global
 		{4BBF680C-C19B-42F6-A4F2-B965BB100056} = {6B177DFE-7985-4FCB-8B97-B0B1D15D06B3}
 		{FB9EA9F4-774C-42DA-9E1C-7BB965CCC9E7} = {6B177DFE-7985-4FCB-8B97-B0B1D15D06B3}
 		{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52} = {AECB97B1-49B7-498F-BC17-DF977E7F48C4}
-		{529FA614-8210-43E0-9729-E97AA72CC7CB} = {AECB97B1-49B7-498F-BC17-DF977E7F48C4}
+		{A6F49412-921E-4890-8101-FC1F7F5702D9} = {AECB97B1-49B7-498F-BC17-DF977E7F48C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AB4F60C-A711-449A-BBED-62057EC784AA}
