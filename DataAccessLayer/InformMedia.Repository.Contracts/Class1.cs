@@ -1,7 +1,5 @@
-﻿namespace InformMedia.Repository.Contracts
+﻿namespace InformMedia.Repository.Contracts;
+public class Class1
 {
-    public class Class1
-    {
 
-    }
 }
