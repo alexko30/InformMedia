@@ -1,6 +1,6 @@
-﻿namespace InformMedia.Entities
+﻿namespace InformMedia.Models
 {
-    public class Post
+    public class PostGet
     {
         public Guid Id { get; set; }
 

@@ -1,6 +1,6 @@
 ﻿namespace InformMedia.Service.Contracts
 {
-    public class Class1
+    public interface IAccountsService
     {
 
     }
