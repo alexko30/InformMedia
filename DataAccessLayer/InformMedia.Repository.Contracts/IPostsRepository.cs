@@ -8,7 +8,7 @@ namespace InformMedia.Repository.Contracts
 
         Task<PostGet> GetAsync(Guid id);
 
-        Task Update(PostUpdate post);
+        Task UpdateAsync(PostUpdate post);
 
         Task DeleteAsync(Guid id);
     }

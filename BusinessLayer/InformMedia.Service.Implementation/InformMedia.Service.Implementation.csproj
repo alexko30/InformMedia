@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAccessLayer\InformMedia.Repository.Contracts\InformMedia.Repository.Contracts.csproj" />
+    <ProjectReference Include="..\InformMedia.Service.Contracts\InformMedia.Service.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>

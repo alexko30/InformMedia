@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLayer", "BusinessLa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAccessLayer", "{AECB97B1-49B7-498F-BC17-DF977E7F48C4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{3EE3864B-2E52-4724-8524-CEC268A2B5CB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformMedia.Service.Contracts", "BusinessLayer\InformMedia.Service.Contracts\InformMedia.Service.Contracts.csproj", "{4BBF680C-C19B-42F6-A4F2-B965BB100056}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformMedia.Service.Implementation", "BusinessLayer\InformMedia.Service.Implementation\InformMedia.Service.Implementation.csproj", "{FB9EA9F4-774C-42DA-9E1C-7BB965CCC9E7}"
@@ -25,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3EE3864B-2E52-4724-8524-CEC268A2B5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3EE3864B-2E52-4724-8524-CEC268A2B5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3EE3864B-2E52-4724-8524-CEC268A2B5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3EE3864B-2E52-4724-8524-CEC268A2B5CB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4BBF680C-C19B-42F6-A4F2-B965BB100056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4BBF680C-C19B-42F6-A4F2-B965BB100056}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BBF680C-C19B-42F6-A4F2-B965BB100056}.Release|Any CPU.ActiveCfg = Release|Any CPU
