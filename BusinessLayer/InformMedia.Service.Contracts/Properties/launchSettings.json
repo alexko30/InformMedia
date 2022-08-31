@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "InformMedia.Service.Contracts": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55359;http://localhost:55362"
+    }
+  }
+}
