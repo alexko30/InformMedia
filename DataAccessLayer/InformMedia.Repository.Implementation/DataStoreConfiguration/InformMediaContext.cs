@@ -4,7 +4,7 @@ using InformMedia.Repository.Implementation.DataStoreConfiguration;
 
 namespace InformMedia.Repository.Implementation
 {
-    public class InformMediaContext: DbContext
+    public class InformMediaContext : DbContext
     {
         public virtual DbSet<UserRecord> Posts { get; set; }
 

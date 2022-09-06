@@ -1,23 +1,19 @@
-﻿using InformMedia.Repository.Contracts.Factories;
-using InformMedia.Repository.Contracts.UnitOfWork;
-using InformMedia.Repository.Contracts;
+﻿using InformMedia.Repository.Contracts.UnitOfWork;
 
 namespace InformMedia.Repository.Implementation.UnitOfWork
 {
     public class UnitOfWorkFactory : IUnitOfWorkFactory
     {
-        private readonly Func<Meta<Lazy<IBaseRepository<InformMediaContext>>>>[] repositoryFactories;
-        private readonly IGenericFactory factory;
+        private readonly InformMediaContext context;
 
-        public UnitOfWorkFactory(IGenericFactory factory, Func<Meta<Lazy<IBaseRepository<InformMediaContext>>>>[] repositoryFactories)
+        public UnitOfWorkFactory(InformMediaContext context)
         {
-            this.factory = factory;
-            this.repositoryFactories = repositoryFactories;
+            this.context = context;
         }
 
         public IUnitOfWork Create()
         {
-            return new UnitOfWork(this.factory, this.repositoryFactories);
+            return new UnitOfWork(this.context);
         }
     }
 }

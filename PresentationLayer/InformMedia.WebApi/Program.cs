@@ -1,3 +1,10 @@
+using InformMedia.Repository.Contracts;
+using InformMedia.Repository.Contracts.UnitOfWork;
+using InformMedia.Repository.Implementation;
+using InformMedia.Repository.Implementation.Repositories;
+using InformMedia.Repository.Implementation.UnitOfWork;
+using InformMedia.Service.Contracts;
+using InformMedia.Service.Implementation;
 using InformMedia.WebApi.Startup;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,8 +16,12 @@ namespace InformMedia.WebApi
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            DataAccessLayerStartup.RegisterServices(builder);
-            BusinessLayerStartup.RegisterServices(builder);
+            builder.Services.AddDbContext<InformMediaContext>();
+            builder.Services.AddScoped<IUnitOfWorkFactory, UnitOfWorkFactory>();
+            builder.Services.AddScoped<IPostsRepository, PostsRepository>();
+            builder.Services.AddScoped<IPostsService, PostsService>();
+            /*DataAccessLayerStartup.RegisterServices(builder);
+            BusinessLayerStartup.RegisterServices(builder);*/
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -22,7 +33,6 @@ namespace InformMedia.WebApi
             
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();

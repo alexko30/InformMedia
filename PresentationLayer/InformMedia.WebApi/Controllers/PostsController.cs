@@ -8,12 +8,10 @@ namespace InformMedia.WebApi.Controllers
     [Route("v{version:apiVersion}/posts")]
     public class PostsController : BaseController
     {
-        private readonly IPostsService mapper;
         private readonly IPostsService postsService;
 
-        public PostsController(IPostsService mapper, IPostsService postsService)
+        public PostsController(IPostsService postsService)
         {
-            this.mapper = mapper;
             this.postsService = postsService;
         }
 
