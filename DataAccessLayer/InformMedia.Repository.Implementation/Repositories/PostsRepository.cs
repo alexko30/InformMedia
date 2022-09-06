@@ -6,6 +6,7 @@ namespace InformMedia.Repository.Implementation.Repositories
     public class PostsRepository : BaseRepository, IPostsRepository
     {
         public PostsRepository(InformMediaContext context) : base(context) { }
+
         public async Task CreateAsync(PostCreate post)
         {
             await Task.Delay(5);
