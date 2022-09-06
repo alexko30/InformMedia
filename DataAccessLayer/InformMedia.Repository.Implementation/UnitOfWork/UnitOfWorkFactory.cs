@@ -1,5 +1,4 @@
-﻿using Autofac.Features.Metadata;
-using InformMedia.Repository.Contracts.Factories;
+﻿using InformMedia.Repository.Contracts.Factories;
 using InformMedia.Repository.Contracts.UnitOfWork;
 using InformMedia.Repository.Contracts;
 

@@ -1,5 +1,4 @@
-﻿using Autofac.Features.Metadata;
-using InformMedia.Repository.Contracts;
+﻿using InformMedia.Repository.Contracts;
 using InformMedia.Repository.Contracts.Factories;
 using InformMedia.Repository.Contracts.UnitOfWork;
 using InformMedia.Repository.Implementation.Constants;
@@ -11,12 +10,16 @@ namespace InformMedia.Repository.Implementation.UnitOfWork
         private readonly Dictionary<Type, Lazy<IBaseRepository<InformMediaContext>>> repositories;
         private readonly InformMediaContext context;
 
-        public UnitOfWork(IGenericFactory factory, Func<Meta<Lazy<IBaseRepository<InformMediaContext>>>>[] repositoryFactories)
+        public UnitOfWork(IGenericFactory factory, Func<Lazy<IBaseRepository<InformMediaContext>>>[] repositoryFactories)
         {
             this.context = factory.Create<InformMediaContext>();
             this.repositories = repositoryFactories
                 .Select(x => x())
-                .ToDictionary(x => (Type)x.Metadata.First(m => m.Key == RepositoriesConstants.TypeMetadataKey).Value, x => x.Value);
+                .ToDictionary
+                (
+                    x => (Type)x.ToString(), 
+                    x => x.Value
+                );
         }
 
         public IPostsRepository PostsRepository => ResolveRepository<IPostsRepository>();

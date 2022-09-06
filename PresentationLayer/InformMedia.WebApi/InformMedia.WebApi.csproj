@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessLayer\InformMedia.Models\InformMedia.Models.csproj" />
+    <ProjectReference Include="..\..\BusinessLayer\InformMedia.Service.Contracts\InformMedia.Service.Contracts.csproj" />
+    <ProjectReference Include="..\..\BusinessLayer\InformMedia.Service.Implementation\InformMedia.Service.Implementation.csproj" />
+    <ProjectReference Include="..\..\DataAccessLayer\InformMedia.Repository.Implementation\InformMedia.Repository.Implementation.csproj" />
+  </ItemGroup>
+
+</Project>
