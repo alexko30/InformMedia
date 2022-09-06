@@ -3,15 +3,20 @@ using InformMedia.Repository.Contracts;
 
 namespace InformMedia.Repository.Implementation.Repositories
 {
-    public class PostsRepository : BaseRepository
+    public class PostsRepository : BaseRepository, IPostsRepository
     {
-        public void CreateAsync(PostCreate post)
+        public PostsRepository(InformMediaContext context) : base(context) { }
+
+        public async Task CreateAsync(PostCreate post)
         {
+            await Task.Delay(5);
             Console.WriteLine("CreateAsync");
         }
 
-        public PostGet GetAsync(Guid id)
+        public async Task<PostGet> GetAsync(Guid id)
         {
+            await Task.Delay(5);
+
             PostTag[] tags = { PostTag.Markets };
 
             return new PostGet
@@ -25,13 +30,15 @@ namespace InformMedia.Repository.Implementation.Repositories
             };
         }
 
-        public void UpdateAsync(PostUpdate post)
+        public async Task UpdateAsync(PostUpdate post)
         {
+            await Task.Delay(5);
             Console.WriteLine("CreateAsync");
         }
 
-        public void DeleteAsync(Guid id)
+        public async Task DeleteAsync(Guid id)
         {
+            await Task.Delay(5);
             Console.WriteLine("CreateAsync");
         }
     }

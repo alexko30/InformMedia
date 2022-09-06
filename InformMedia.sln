@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformMedia.Repository.Impl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformMedia.Models", "BusinessLayer\InformMedia.Models\InformMedia.Models.csproj", "{DF87D2AC-4526-4940-B2B0-A0C55DEEDD8A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{C238C8E3-A703-4613-ACDE-5DE588EA2A28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformMedia.WebApi", "PresentationLayer\InformMedia.WebApi\InformMedia.WebApi.csproj", "{302ECD90-E3DE-4951-937C-BCD90F61CE04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{DF87D2AC-4526-4940-B2B0-A0C55DEEDD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF87D2AC-4526-4940-B2B0-A0C55DEEDD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF87D2AC-4526-4940-B2B0-A0C55DEEDD8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{302ECD90-E3DE-4951-937C-BCD90F61CE04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302ECD90-E3DE-4951-937C-BCD90F61CE04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302ECD90-E3DE-4951-937C-BCD90F61CE04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302ECD90-E3DE-4951-937C-BCD90F61CE04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +61,7 @@ Global
 		{54C5C56E-6731-44E4-95F1-5D9AEFC6AF52} = {AECB97B1-49B7-498F-BC17-DF977E7F48C4}
 		{A6F49412-921E-4890-8101-FC1F7F5702D9} = {AECB97B1-49B7-498F-BC17-DF977E7F48C4}
 		{DF87D2AC-4526-4940-B2B0-A0C55DEEDD8A} = {6B177DFE-7985-4FCB-8B97-B0B1D15D06B3}
+		{302ECD90-E3DE-4951-937C-BCD90F61CE04} = {C238C8E3-A703-4613-ACDE-5DE588EA2A28}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AB4F60C-A711-449A-BBED-62057EC784AA}
